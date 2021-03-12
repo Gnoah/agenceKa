@@ -62,27 +62,29 @@
             <!-- <span class="rotate mr-auto d-none" id="contact2" >NOUS CONTACTER</span> -->
             <div class="solide-ronde2 d-none" id="round2">
             </div>
+            <div class="col-md-2"></div>
+            <!-- <div class="col-md-2"> -->
+                <div class="description d-none">
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                </div>
+            </div>
             <div class="container-fluid d-none" id="page2">
-                <div class="col-md-2"></div>
-                <!-- <div class="col-md-2"> -->
-                    <div class="description">
-                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    </div>
+
 
                 <!-- </div> -->
                 <div class="row page2">
                     <div class="col-md-1"></div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 sectionLeft">
                         <img class="image-rectangle" src="image/Rectangle 6.png">
                         <button name="button" class="btn1">Qui somme nous</button>
                     </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
+                    <div class="col-md-1 "></div>
+                    <div class="col-md-2 sectionCenter">
                         <img class="image-rectangle" src="image/Rectangle 6.png">
                         <button name="button" class="btn1">Nos talents</button>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 sectionRight">
                         <img class="image-rectangle" src="image/Rectangle 6.png">
                         <button name="button" class="btn1">Activités</button>
                     </div>
@@ -107,23 +109,28 @@
 <script>
     $(document).ready(function(){
         $('#next').click(function(){
-            // $('#page1').hide();
-            $('#count').text("4/4"); 
-            $('#page2').show(); 
-            $('#round2').show(); 
-            // $('#page2').animate({});
+            $('#page1').hide();
+            // $("#page1").animate({top: '-1000px'});
+            $('#page2').show("slow"); 
             $('#contact2').show();
-            $("#page1").slideUp("fast");
-            // $(".image-africa").animate({top: '-1000px'});
+            // $(".description").fadeIn("slow");
+            $(".description").show("slow");
+            $('#round2').show(); 
+            $('#count').text("4/4"); 
+            // $('#page2').animate({});
+            // $("#page1").slideUp("fast");
             // $(".slogan").animate({top: '-1000px'});
-            // $("#page1").fadeOut("fast");
+            // $("#page1").fadeOut("slow");
 
         })
         $('#prev').click(function(){
             $('#page2').hide();
+            $('.description').hide(); 
             $('#round2').hide(); 
             $('#count').text("1/4");  
+            $(".image-africa").animate({top: '0px'});
             $('#page1').show();
+            $(".image-africa").fadeIn("slow");
             // $('#page1').animate({});
 
 

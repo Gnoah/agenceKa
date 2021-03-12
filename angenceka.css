@@ -33,14 +33,14 @@
 
 /* .col-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%} */
 .sectionLeft{
-    margin-left: 50%;
-    -webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%
+    margin-top: -60px;
+
 }
-/* .sectionRight{
-    margin-right: auto;
-} */
+.sectionRight{
+    margin-top: -5px;
+}
 .sectionCenter{
-    margin-left:100%;
+    margin-top: -40px;
 }
 #mieux {
     margin-top: 150px;
@@ -58,8 +58,17 @@
     font-size: large;
     padding-left: 40px;
     /* float:right; */
-    margin-left: 20%;
+    margin-left: 30%;
     margin-top: 44px;
+    animation: descriptionAnim 1s linear;
+}
+@keyframes descriptionAnim{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
 }
 .solide-ronde {
     margin-left: 620px;
@@ -77,7 +86,7 @@
     margin-top: 38px;
     /* position: absolute; */
     animation-name: ronde2;
-    animation-duration: 3s;
+    animation-duration: 1s;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -86,25 +95,32 @@
     float:left;
 }
 .page2{
-    margin-top: 15%;
+    margin-top: 20%;
     /* position: absolute; */
     /* /* left: 0; */
-    /* bottom:127px; */
-    /* animation: MoveUpDown 5s  ; */
+    bottom:-100px;
+    animation: MoveUpDown 5s  ;
 }
 
 @keyframes MoveUpDown {
     0% {                               
+        /* bottom:10%; */
+        margin-top:50%;
         opacity: 0%;
     }
-    20% {
-        bottom: -10px; 
+    15% {                               
+        /* bottom:10%; */
+        margin-top:30%;
         opacity: 0%;
     }
-    40% {
-        bottom:127px;
+    30% {
         opacity: 100%;
+        margin-top:20%;
     }
+    /* 40% {
+        bottom:-127px;
+
+    } */
 
   }
 /* .solide-ronde {
@@ -160,7 +176,7 @@ body, html {
 .rotate{
     float: right !important;
     margin-top: 100px;
-    margin-left: 80%;
+    margin-left: 90%;
     transform: rotate(90deg);
     position: absolute;
     font-family: 'Raleway', sans-serif;
@@ -317,16 +333,13 @@ body, html {
         height: 300px;
         opacity: 100%;
     }
-    /* 25% {
+
+    50% {
         border-radius: 100%;
-        width: 400px;
-        height: 400px;
-    } */
-    30% {
-        border-radius: 100%;
-        width: 150px;
-        height: 150px;
-        opacity: 0%;
+        /* margin-left: 140px; */
+        /* width: 150px;
+        height: 150px; */
+        /* opacity: 0%; */
     }
 }
 
